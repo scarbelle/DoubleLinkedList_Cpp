@@ -1,7 +1,7 @@
 #ifndef DNODE_SHDP_H
 #define DNODE_SHDP_H
 
-#include <memory>
+#include <memory>           // shared_ptr
 
 
 class DNode
@@ -27,5 +27,6 @@ class DNode
   std::shared_ptr<DNode> _prev;
   std::shared_ptr<DNode> _next;
 };
+
 
 #endif //DNODE_SHDP_H

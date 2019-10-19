@@ -1,8 +1,6 @@
 #ifndef DNODE_H
 #define DNODE_H
 
-#include <memory>
-
 
 class DNode
 {

@@ -26,10 +26,10 @@ runlist: $(OBJS)
 runlist_shdp: $(OBJS_SHDP)
 	$(CXX) $(CPPFLAGS) -o runlist_shdp $(OBJS_SHDP)
 
-memcheck_runlist:
+memcheck_runlist: $(TARGET)
 	/usr/bin/valgrind --leak-check=full ./runlist
 
-memcheck_runlist_shdp:
+memcheck_runlist_shdp: $(TARGET_SHDP)
 	/usr/bin/valgrind --leak-check=full ./runlist_shdp 
 
 clean:

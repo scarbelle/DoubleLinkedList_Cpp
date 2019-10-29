@@ -24,16 +24,16 @@ runlist: $(OBJS)
 	$(CXX) $(CPPFLAGS) -o runlist $(OBJS)
 
 runlist_shdp: $(OBJS_SHDP)
-	$(CXX) $(CPPFLAGS) -o runlist $(OBJS_SHDP)
+	$(CXX) $(CPPFLAGS) -o runlist_shdp $(OBJS_SHDP)
 
-test_runlist:
+memcheck_runlist:
 	/usr/bin/valgrind --leak-check=full ./runlist
 
-test_runlist_shdp:
+memcheck_runlist_shdp:
 	/usr/bin/valgrind --leak-check=full ./runlist_shdp 
 
 clean:
-	rm -f $(OBJECTS)
+	rm -f $(OBJECTS) $(TARGETS)
 
 %.o:%c
 	$(CXX) $(CPPFLAGS) -c $<

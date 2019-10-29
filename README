@@ -38,6 +38,7 @@ To execute:
     * ./runlist_shdp     - execute the version using C++ shared pointers
 
 To execute valgrind memory usage check:
-    * make memcheck_runlist      - executes valgrind mem check on runlist
-    * make memcheck_runlist_shdp - executes valgrind mem check on runlist_shdp
+    * make test      - executes valgrind mem check on runlist
+    * make test_shdp - executes valgrind mem check on runlist_shdp
+    * make tests     - executes valgrind mem check on runlist, runlist_shdp
 

@@ -1,0 +1,37 @@
+This directory contains code for Two Coding Samples for demonstration of
+implementation of Double Linked Lists in C++:
+    * dLList             - Double Linked List - uses C++ standard pointer
+    * dLList_shdp        - Double Linked List - uses C++ shared pointer
+
+To build:
+    * make               - builds both executables (runlist, runlist_shdp)
+    * make runlist       - builds standard pointer executable (runlist)
+    * make runlist_shdp  - builds standard pointer executable (runlist_shdp)
+
+To execute:
+    * ./runlist          - execute the version using C++ standard pointers
+    * ./runlist_shdp     - execute the version using C++ shared pointers
+
+Program Background:
+    Please keep in mind, the objective of this program is to demonstrate
+    implementation of a double-linked list in C++, thus the user interface
+    is for simple demonstration purposes only, not specially hardened
+    to protect against bad user input.
+
+    Both versions of executables operate identically.
+
+Program Description & Usage:
+    A user interactive program, which builds a numbers list and allows
+    the user to remove any number from the list in any order.
+
+    * Instructs the user to enter a count of numbers to be entered.
+    * Instructs the user to enter each number to the count specified
+    * Prints the list of entered numbers with index(Id) and values(Val).
+    * Inquires if the user would like to remove a number from the list.
+        * If user replies "Y" or "y" (for Yes),
+           * The the Id of the number to be removed is requested.
+           * The updated list is displayed.
+           * The user is again asked if they would like to remove a number.
+        * If user replies anything other than "Y" or "y", the reponse is
+            interpreted to be NO, and the program is exited.
+
